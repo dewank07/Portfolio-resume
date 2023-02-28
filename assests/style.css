@@ -412,7 +412,8 @@ text-align: center;
  
 .skills_content,
 .languages_content{
-    grid-template-columns: repeat(2,1fr);
+    
+    grid-template-columns: repeat(2,-1fr);
 }
 .skills_content{
     gap: 0;
@@ -432,6 +433,9 @@ text-align: center;
     border-radius:50% ;
     margin-right: .75rem;
 
+}
+.skills_data{
+    padding-left: 20px;
 }
 
 .certificates_title{
@@ -538,15 +542,16 @@ text-align: center;
     .home_button-movil{
         display: none;
     }
-    .references_container{
+    /* .references_container{
         grid-template-columns: repeat(2,1fr);
     }
+     */
     .languages_content{
         grid-template-columns: repeat(3,max-content);
         column-gap: 3.5rem;
     }
     .interests_container{
-        grid-template-columns: repeat(4,max-content);
+        grid-template-columns: repeat(max-content,max-content);
         column-gap: 3.5rem;
     }
 }
